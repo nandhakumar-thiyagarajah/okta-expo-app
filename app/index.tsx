@@ -52,13 +52,13 @@ const App = () => {
             cancelEvt.remove();
         }
     },[]);
-    
+
     return (
         <SafeAreaView style={styles.container}>
             <Text style={styles.title}>{'Okta Login'.toLocaleUpperCase()}</Text>
             <View style={styles.whiteContainer}>
                 <View style={{width: '100%'}}>
-                    <Text>{authenticated.toString()}</Text>
+                    <Text style={{textAlign: 'center', marginVertical: 10}}>authenticated value is : {authenticated.toString()}</Text>
                     <TouchableOpacity style={styles.buttonContainer}>
                         <Text style={styles.buttonText}>Login</Text>
                     </TouchableOpacity>
